@@ -1,0 +1,1 @@
+C:\Users\cross\Desktop\code\clojerl\bin\clojerl.bat -i .\start.clje -e "(main)"

@@ -1,0 +1,12 @@
+[
+  // https://github.com/microsoft/vscode/issues/23757
+  // add this keybinding to your keybindings.json
+  {
+    "key": "shift+alt+p",
+    "command": "clover.evaluate-block",
+    "args": [],
+    "when": "config.workspaceKeybindings.clover.enabled && !suggestWidgetVisible && editorLangId == 'clojure'"
+  }
+  // clover.evaluate-top-block
+  // clover.evaluate-block
+]

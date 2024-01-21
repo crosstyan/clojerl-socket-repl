@@ -1,0 +1,15 @@
+(require '[clojure.core.server :as s])
+
+(defn main []
+  (let [addr "127.0.0.1"
+        port 35012
+        name "repl"
+        pid 
+        (s/start-server {:address addr 
+                            :port port 
+                            :name name 
+                            :accept 'clojure.core.server/repl 
+                            :args []})]
+    (prn (str addr ":" port "/" name "/" pid))
+    ;; block 
+    (receive* a (prn a))))
