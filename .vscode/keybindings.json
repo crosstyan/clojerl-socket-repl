@@ -5,7 +5,7 @@
     "key": "shift+alt+p",
     "command": "clover.evaluate-block",
     "args": [],
-    "when": "config.workspaceKeybindings.clover.enabled && !suggestWidgetVisible && editorLangId == 'clojure'"
+    "when": "!calva:connected && !suggestWidgetVisible && editorLangId == 'clojure'"
   }
   // clover.evaluate-top-block
   // clover.evaluate-block

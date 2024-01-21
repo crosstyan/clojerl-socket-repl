@@ -1,0 +1,19 @@
+(ns repl-socket.main
+  (:require [clojure.edn :as edn]
+            [clojure.main :as m]
+            [clojure.core.server :as cs]
+            [repl-socket.server :as s]))
+
+(defn -main []
+  (let [addr "127.0.0.1"
+        port 35012
+        name "repl"
+        pid 
+        (s/start-server {:address addr 
+                            :port port 
+                            :name name 
+                            :accept cs/repl 
+                            :args []})]
+    (prn (str addr ":" port "/" name pid))
+    ;; block 
+    (receive*)))

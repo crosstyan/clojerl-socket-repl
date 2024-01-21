@@ -1,0 +1,13 @@
+{ application, 'repl-socket'
+, [ {vsn, git}
+  , {description, "Simple REPL socket server"}
+  , {modules, []}
+  , { applications
+    , [ stdlib
+      , kernel
+      , clojerl
+      ]
+    }
+  , {mod, {'repl-socket.app', []}}
+  ]
+}.

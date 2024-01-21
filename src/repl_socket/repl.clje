@@ -1,0 +1,9 @@
+(ns repl-socket.repl)
+
+(+ 1 1)
+
+(+ 2 2)
+
+(defn a [x y] (+ x y))
+
+(a 1 2)
